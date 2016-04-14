@@ -33,7 +33,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #fec503;
+  color: #ffac00;
 }
 h1,
 
@@ -51,9 +51,9 @@ h6 {
 
 /*sblmnya dicomment*/ 
 .btn-primary {
-  color: #ffffff;
-  background-color: #fed136;
-  border-color: #fed136;
+  color: #fed136;
+  background-color: #222222;
+  border-color:#666666;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -87,14 +87,13 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #fed136;
+  background-color: #fec503;
   border-color: #fed136;
 }
 .btn-primary .badge {
   color: #fed136;
   background-color: #ffffff;
 }
-/*atas sblmnya dicomment*/
 
 .btn {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;  border: none;
@@ -159,7 +158,8 @@ fieldset[disabled] .btn-xl.active {
   }
 .navbar-default .navbar-brand img{
 	max-height: 40px;
-	margin-top: 0px:
+	margin-top: 0px;
+	border-radius: 0.2;
 /*  padding-top: 6px;
   color: #fed503;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
@@ -177,7 +177,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-toggle {
   background-color: #fed136;
   border-color: #fed136;
-/*  data-toggle:collapse; data-target:#bs-example-navbar-collapse-1; */
+  data-toggle:collapse; data-target:#bs-example-navbar-collapse-1; 
   }
 .navbar-default .navbar-toggle .icon-bar {
   background-color:white;
@@ -247,7 +247,7 @@ li.dropdown {
 .navbar-default .navbar-nav > .active > a:focus {
   color: white;
   background-color: #FFAC00;
-  padding:0 auto; /*baru di Z gada*/
+  padding:0 auto; 
   }
 .form-control{
   max-width: 80px;
@@ -282,9 +282,10 @@ li.dropdown {
   }
 }
 
-body {
+/*body {
   webkit-tap-highlight-color: #fed136;
-}
+}*/
+
   span.glyphicon {
   font-size: 28px; 
 }
@@ -334,21 +335,28 @@ header .intro-text .intro-heading {
     font-size: 28px;
     }
   header .intro-text .intro-lead-in {
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
     font-size: 40px;
     line-height: 40px;
-    margin-top:25px; /*top no,bottom beda 25ps*/
+    margin-top:25px; 
     margin-bottom: 35px;
     }
   header .intro-text .intro-heading {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 45px;
-    line-height: 40px;
+    font-size: 28px;
+    line-height: 30px;
     margin-bottom: 30px;
     }
+}
+#menu {
+	margin-top: 50px;
+}
+#menu .ul .li .btn .btn-lg .btn-xl {
+	color: #fed136;
+	background:  #222222;
+	border-radius: 0.3;
 }
 
 #myCarousel {
@@ -534,7 +542,7 @@ img::-moz-selection {
 .menu-modal .modal-body {
   padding: 20px;
   }
-.menu-modal .modal-body .btn .btn-primary {
+.menu-modal .modal-body ul li .btn .btn-primary {
   margin-top: 5px;
   background-color: #222222;
   color: #fed136;
@@ -1209,18 +1217,19 @@ shoppingcart{
 }
 
 /*PARTNERS*/
-.partners {
-	padding: 300px 0;
+.partners container{
+	padding: 300px 0 5% 0;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c1a618+0,f1c40f+25,f1c40f+75,c1a618+100 */
 	background: white;
 	margin: 100px 0;
+	text-align: center;
 	}
 .partners i.fa {
 	font-size: 30px;
 	padding: -15px;
 	color: #fed136;
   	}
-.partners .clearfix a img {
+.partners a img {
 	position: relative ;
 	max-height: 250px;
 	float: center;
@@ -1372,7 +1381,7 @@ ol.type li a:hover {
 }
 .portfolio-modal .close-modal:hover {
 	background: #222222;
-	opacity: .3;
+	opacity: 0.3;
 }
 .portfolio-modal .close-modal .lr {
 	z-index: 1051;
@@ -1396,12 +1405,10 @@ ol.type li a:hover {
 .portfolio-modal .btn-primary {
 	color: #fec136;
 	background-color: #222222;
-/*	border-color: #1d434e;*/
 }
 .portfolio-modal .btn-primary:hover, .portfolio-modal .btn-primary:focus, .portfolio-modal .btn-primary.focus, .portfolio-modal .btn-primary:active, .portfolio-modal .btn-primary.active {
 	color: #fec136;
 	background-color: #222222;
-/*	border-color: #032e3a;*/
 }
 
 /*end of PARTNERSHIP*/
@@ -1430,8 +1437,8 @@ footer .social-buttons {
 footer ul.social-buttons li a {
   display: block;
   background-color: #222222;
-  height: 40px;
-  width: 40px;
+  height: 40px !important;
+  width: 40px !important;
   border-radius: 100%;
   font-size: 20px;
   padding-top: 10px;
