@@ -427,16 +427,37 @@ section {
 #menu{
 	background-color: white;
 }
-.menu btn btn-primary {
+.menu .menutype .ul.li.span.btn.btn-primary {
+  color: #fed136;
+  background-color: #222222;
+  border-color:#666666;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
   align : center;
+  float: center !important;
   position: relative;
   margin-top:100px;
 }
+.menu .menutype .ul.li.span .button{
+  margin: 100px 150px 0 150px;
+  position: static; 
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: #fec503;
+  border-color: #f6bf01;
+}
 .menu-box {
-  position: relative;
+  position: relative, center !important;
   display: block;
   max-width: 350px;
-  margin: 0 10px50px 10px;
+  margin: 0 10px 50px 10px;
 }
 .menu-box .menu-box-caption {
   color: white;
@@ -809,17 +830,46 @@ gada di contoh*/
 shoppingcart{
 	margin: 0px 50px 100px 50px;
 	}
+ul {
+	list-style-type: none;
+	}
 
+a: hover{
+	text-decoration: none;
+	}
+	
 .minicart{
 /*	background-image:url('../img/sprite.png');
 	background-position: -156px 11px;
 	background-repeat:no-repeat;
-*/	width: auto;
+	width: auto;
 	max-height: 30px;
 	padding-right: 32px;
 	color: Red;
+*/	background:url:url('../../coding_party_repo/coding-party/img/p&c logo.JPG');
+	background-position: -156px 11px;
+	background-repeat:no-repeat;
+	width: 40px;
+	height: 50px;
+	padding-right: 32px;
 	}
 
+navbar{
+	background-color:#FFEDB0;
+	padding: 15px ;
+	border-radius: 0;
+	margin: 0;
+}
+/*.navbar-brand{
+	color: #fed503;
+  	font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+	padding-left: 32px;
+}
+
+.navbar-brand:hover{
+	color: #ffac00;
+}
+*
 
 /*-----------------------------------
 	Breadcrumb 
@@ -869,7 +919,6 @@ shoppingcart{
 	Logo and description 
 ----------------------------------- */
 
-
 .col-md-5.col-sm-12{
 	padding: 0;
 	}
@@ -912,6 +961,7 @@ shoppingcart{
 .col-md-7.col-sm-12{
 	padding-left: 10px ;
 	margin-bottom: 72px;
+	float: center;
 	}
 
 .row{
@@ -941,7 +991,7 @@ shoppingcart{
 	padding-left:18px;
 	}
 .columnCaptions span:third-child{
-	padding-left:28px;
+	padding-left:32px;
 	}
 
 .columnCaptions span{
@@ -953,7 +1003,7 @@ shoppingcart{
 
 .columnCaptions span:last-child{
 	float: right;
-	padding-right: 122px;
+	padding-right: 82px;
 	}
 
 
@@ -1005,7 +1055,7 @@ shoppingcart{
 	font-size :18px;
 	font-weight: bold;
 	float: right;
-	padding-right: 300px;
+	padding-right: 230px;
 	}
 
 

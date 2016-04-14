@@ -132,7 +132,26 @@
  <section class="no-padding" id="menu">
   <div class="container-fluid">
 
-   <ul class="list-inline btn btn-xl">
+	<ul class="list-inline">
+		<li class="row">
+			<span> <button type="button" class="btn btn-primary">
+			<a href="#entree"> ENTRE&Eacute;</a> </button></span>
+		 </li>
+		<li class="row ">
+			<span class="order"> <button type="button" class="btn btn-primary">
+			<a href="#main"> MAIN COURSE </a></button></span>
+		 </li>
+		<li class="row">
+			<span> <button type="button" class="btn btn-primary">
+			<a href="#dessert"> DESSERT </a></button></span>
+		 </li>
+		<li class="row ">
+			<span class="order"> <button type="button" class="btn btn-primary">
+			<a href="#wine"> WINE </a></button></span>
+		 </li>
+	</ul>
+<!--		
+   <ul class="row list-inline>
  	<li><a href="#entree" >
  		<i class="btn btn-lg btn-xl" value="ENTRE&Eacute;" ></i></a>
 	</li>
@@ -146,7 +165,7 @@
  		<i class="btn btn-lg btn-xl" value="WINE" ></i></a>
 	</li>
    </ul>
-
+-->
 	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="1800">
 	<ol class="carousel-indicators"> 
      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -2124,7 +2143,7 @@
 					<h3>Your shopping cart</h3>
 				</div>
 				
-				<div class="col-md-5 col-sm-12 text-left">
+				<div class="col-md-5 col-sm-12 text-left center-block">
 					<ul><li class="row list-inline columnCaptions">
 							<span>QTY</span>
 							<span>&nbsp;ITEM</span>
@@ -2135,7 +2154,7 @@
 							<span class="popbtn"><a class="arrow"></a></span>
 							<span class="quantity">1</span>
 							<span class="itemName">Salmon Terrine</span>
-							<span class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IDR 123,000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+							<span class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IDR 123,000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
 							&nbsp;<span class="totprice">IDR 123,000</span>
 						</li>
 						<li class="row">
@@ -2164,12 +2183,14 @@
 							<span class="quantity">2</span>
 							<span class="itemName">Deep-Filled Vol-Au-Vents</span>
 							<span class="price">IDR 78,000</span>
-							<span class="totprice">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IDR 156,000</span>				
+							<span class="totprice">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IDR 156,000</span>				
 						</li>
 						<li class="row totals">
-							<span class="order"> <a href="#payment" class="text-center"class="btn btn-xl"></a><b>ORDER</b></span>
-							<span class="price">    T O T A L</span>
-							<span class="totprice"> IDR 1,130,000</span>
+							<span class="order"> <button type="button" class="btn btn-primary" data-dismiss="modal">
+								<a href="#payment"></a> <b>ORDER</b> </button></span>
+							<span class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    T O T A L</span>
+							<span class="totprice"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>IDR 1,130,000</b></span>
 						</li>
 					</ul>
                    	<button type="button" class="btn btn-primary" data-dismiss="modal"> <i class="fa fa-times"></i> Back </button>
