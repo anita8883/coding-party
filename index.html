@@ -60,41 +60,42 @@
  
 <body id="page-top" class="index">
 <!-- NAVIGATION -->	
-    <nav class="navbar navbar-default navbar-fixed-top nav_color navbar-inverse" style="left: 0; right: 0; top: 0; height: 62px">
-        <div class="container-fluid" style="height: 10px">
+    <nav class="navbar navbar-default navbar-fixed-top nav_color navbar-inverse" >
+        <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" 
-                data-target="#bs-example-navbar-collapse-1" style="left: 0px; top: -3px" >
+                data-target="#myNavbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top" style="color: #FED136"> 
+                <a class="navbar-brand page-scroll" href="#page-top" style="color: #FED136;
+                 margin-top:0; margin-bottom:0"> 
                 	<img src="../../coding-party/img/p&c%20horizontal%20-%20Copy.JPG"/>                 </a>
             </div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+		<div class="collapse navbar-collapse" id="myNavbar" >
 			 <ul class="nav navbar-nav navbar-right">
 				<li class="hidden">
 					<a href="#page-top"></a> </li>
-				<li><a class="page-scroll" href="#menu">Menu</a>      			</li>
+				<li><a class="page-scroll" href="#menu">Menu</a></li>
 	    	    <li><a class="page-scroll" href="#about">About</a></li>
 			 	<li><a class="page-scroll" href="#contact">Contact</a></li>
 			 	<li><a class="page-scroll" href="#partners">Partners</a></li>
 			 	<li><a class="page-scroll" href="#log-in">Login</a></li>
-				<li data-toggle="modal">
-				 	<a class="page-scroll" href="#shoppingcart"> Cart
+				<li><a class="page-scroll" href="#shoppingcart" class="btn btn-info btn-lg"
+					data-toggle="modal"> Cart 
           				<span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-				<li><form class="navbar-form navbar-left" role="search">
+<!--				<li><form class="navbar-form navbar-left" role="search">
                 	 <div class="form-group" "col-xs-2">
                      	<input type="text" class="form-control" placeholder="Search"/>
                 	 </div>
                 	</form>
 				 </li>
-			  </ul>
+-->			  </ul>
 		  </div>
 		</div>
 	</nav>	
@@ -118,7 +119,7 @@
                 					<div class="clearfix"></div>
 
  <section class="no-padding" id="menu">
-  <div class="container">
+  <div class="container-fluid">
 
    <ul class="list-inline btn btn-xl">
  	<li><a href="#entree" >
@@ -201,8 +202,7 @@
 
 <!--ENTREE-->
 
-<section id="entree">
-  <div class="container-fluid" id="entree">
+ <div id="entree" class="container-fluid" >
    <div class="row no-gutter">       
 				
 				<div class="col-lg-4 col-sm-6">
@@ -244,7 +244,7 @@
                             
                             <p>Item details
 							 </p>
-							<ul style="list-style-type:disc"> 
+							<ul style="list-style-type:none"> 
 								<li>Price: IDR 78,000</li>
 								<li>Weight: 540 g</li>
 								<li>Serves: 27 Portions</li>
@@ -304,7 +304,7 @@
                             
                             <p>Item details
 							 </p>
-							<ul style="list-style-type:disc"> 
+							<ul style="list-style-type:none"> 
 								<li>Price: IDR 67,000</li>
 								<li>Weight: 760 g</li>
 								<li>Serves: 24 Portions</li>
@@ -365,7 +365,7 @@
                             
                             <p>Item details
 							 </p>
-							<ul style="list-style-type:disc"> 
+							<ul style="list-style-type:none"> 
 								<li>Price: IDR 56,000</li>
 								<li>Weight: 980 g</li>
 								<li>Serves: 6 Portions</li>
@@ -427,7 +427,7 @@
                             
                             <p>Item details
 							 </p>
-							<ul style="list-style-type:disc"> 
+							<ul style="list-style-type:none"> 
 								<li>Price: IDR 67,000</li>
 								<li>Weight: 580 g</li>
 								<li>Serves: 24 Portions</li>
@@ -486,7 +486,7 @@
                             
                             <p>Item details
 							 </p>
-								<ul style="list-style-type:disc"> 
+								<ul style="list-style-type:none"> 
 								<li>Price: IDR 56,000</li>
 								<li>Weight: 550 g</li>
 								<li>Serves: 18 Portions</li>
@@ -545,7 +545,7 @@
                             
                             <p>Item details
 							 </p>
-							<ul style="list-style-type:disc"> 
+							<ul style="list-style-type:none"> 
 								<li>Price: IDR 123,000</li>
 								<li>Weight: 600 g</li>
 								<li>Serves: 20 Portions</li>
@@ -569,12 +569,11 @@
  </div> <!--container-->
                 					<div class="clearfix"></div>
                 					<div class="clearfix"></div>
-</section> 
+
  
 <!--MAIN COURSE-->
 
-<section id="main">
-  <div class="container-fluid" >
+ <div id="main" class="container-fluid" >
    <div class="row no-gutter">       
 				
                  <div class="col-lg-4 col-sm-6">
@@ -614,7 +613,7 @@
                             
                             <p>Item details
 							 </p>
-							<ul style="list-style-type:disc"> 
+							<ul style="list-style-type:none"> 
 								<li>Price: IDR 567,000</li>
 								<li>Weight: 2,000 g</li>
 								<li>Serves: 10 Portions</li>
@@ -673,7 +672,7 @@
                             
                             <p>Item details
 							 </p>
-							<ul style="list-style-type:disc"> 
+							<ul style="list-style-type:none"> 
 								<li>Price: IDR 456,000</li>
 								<li>Weight: 1,100 g</li>
 								<li>Serves: 30 Portions</li>
@@ -731,7 +730,7 @@
                             
                             <p>Item details
 							 </p>
-							<ul style="list-style-type:disc"> 
+							<ul style="list-style-type:none"> 
 								<li>Price: IDR 345,000</li>
 								<li>Weight: 723 g</li>
 								<li>Serves: 38 Pieces</li>
@@ -791,7 +790,7 @@
                             
                             <p>Item details
 							 </p>
-							<ul style="list-style-type:disc"> 
+							<ul style="list-style-type:none"> 
 								<li>Price: IDR 234,000</li>
 								<li>Weight: 720 g</li>
 								<li>Serves: 24 Sticks * Portions</li>
@@ -851,7 +850,7 @@
                             
                             <p>Item details
 							 </p>
-							<ul style="list-style-type:disc"> 
+							<ul style="list-style-type:none"> 
 								<li>Price: IDR 567,000</li>
 								<li>Weight: 2,000 g</li>
 								<li>Serves: 10 Portions</li>
@@ -910,7 +909,7 @@
                             
                             <p>Item details
 							 </p>
-							<ul style="list-style-type:disc"> 
+							<ul style="list-style-type:none"> 
 								<li>Price: IDR 456,000</li>
 								<li>Weight: 397 g</li>
 								<li>Serves: 4 Portions</li>
@@ -971,7 +970,7 @@
                             
                             <p>Item details
 							 </p>
-							<ul style="list-style-type:disc"> 
+							<ul style="list-style-type:none"> 
 								<li>Price: IDR 678,000</li>
 								<li>Weight: 1500 g</li>
 								<li>Serves: 6-8 Portions</li>
@@ -1031,7 +1030,7 @@
                             
                             <p>Item details
 							 </p>
-							<ul style="list-style-type:disc"> 
+							<ul style="list-style-type:none"> 
 								<li>Price: IDR 456,000</li>
 								<li>Weight: 750 g</li>
 								<li>Serves: 8 Portions</li>
@@ -1089,7 +1088,7 @@
                             
                             <p>Item details
 							 </p>
-							<ul style="list-style-type:disc"> 
+							<ul style="list-style-type:none"> 
 								<li>Price: IDR 234,000</li>
 								<li>Weight: 600 g</li>
 								<li>Serves: 24 Portions</li>
@@ -1172,13 +1171,10 @@
 --> </div> <!--row-->
  </div> <!--container-->
 
-</section> 
-
 
 <!-- DESSERTS -->
 
-<section id="dessert">
-  <div class="container-fluid">
+ <div id="dessert" class="container-fluid">
    <div class="row no-gutter">       
 	                
                 <div class="col-lg-4 col-sm-6">
@@ -1276,7 +1272,7 @@
                             
                             <p>Item details
 							 </p>
-							<ul style="list-style-type:disc"> 
+							<ul style="list-style-type:none"> 
 								<li>Price: IDR 123,000</li>
 								<li>Weight: 1008 g</li>
 								<li>Serves: 20 Pieces</li>
@@ -1335,7 +1331,7 @@
                             
                             <p>Item details
 							 </p>
-							<ul style="list-style-type:disc"> 
+							<ul style="list-style-type:none"> 
 								<li>Price: IDR 123,000</li>
 								<li>Weight: 440 g</li>
 								<li>Serves: 24 Pieces</li>
@@ -1395,7 +1391,7 @@
                             
                             <p>Item details
 							 </p>
-							<ul style="list-style-type:disc"> 
+							<ul style="list-style-type:none"> 
 								<li>Price: IDR 123,000</li>
 								<li>Weight: 600 g</li>
 								<li>Serves: 24 Portions</li>
@@ -1452,7 +1448,7 @@
                             
                             <p>Item details
 							 </p>
-							<ul style="list-style-type:disc"> 
+							<ul style="list-style-type:none"> 
 								<li>Price: IDR 123,000</li>
 								<li>Weight: 10800 g</li>
 								<li>Serves: 12 Portions</li>
@@ -1510,7 +1506,7 @@
                             
                             <p>Item details
 							 </p>
-							<ul style="list-style-type:disc"> 
+							<ul style="list-style-type:none"> 
 								<li>Price: IDR 123,000</li>
 								<li>Weight: 288 g</li>
 								<li>Serves: 8 Portions</li>
@@ -1534,11 +1530,11 @@
  </div> <!--container-->
                 					<div class="clearfix"></div>
                 					<div class="clearfix"></div>
-</section>
+
 
 <!-- W I N E -->
-<section id="wine">
-  <div class="container-fluid">
+
+  <div id="wine" class="container-fluid">
    <div class="row no-gutter">       
                
 				<div class="col-lg-4 col-sm-6">
@@ -1579,7 +1575,7 @@
                             
                             <p>Item details
 							 </p>
-							<ul style="list-style-type:disc"> 
+							<ul style="list-style-type:none"> 
 								<li>Price: IDR 456,000</li>
 								<li>Bottle size: 750 ml</li>
  								<li>Alcohol content: 14%</li>
@@ -1638,7 +1634,7 @@
                             
                             <p>Item details
 							 </p>
-							<ul style="list-style-type:disc"> 
+							<ul style="list-style-type:none"> 
 								<li>Price: IDR 234,000</li>
 								<li>Bottle size: 750 ml</li>
  								<li>Alcohol content: 12%</li>
@@ -1697,7 +1693,7 @@
                             
                             <p>Item details
 							 </p>
-							<ul style="list-style-type:disc"> 
+							<ul style="list-style-type:none"> 
 								<li>Price: IDR 456,000</li>
 								<li>Bottle size: 750 ml</li>
  								<li>Alcohol content: 0%</li>
@@ -1757,7 +1753,7 @@
                             
                             <p>Item details
 							 </p>
-							<ul style="list-style-type:disc"> 
+							<ul style="list-style-type:none"> 
 								<li>Price: IDR 234,000</li>
 								<li>Bottle size: 750 ml</li>
  								<li>Alcohol content: 11%</li>
@@ -1815,7 +1811,7 @@
                             
                             <p>Item details
 							 </p>
-							<ul style="list-style-type:disc"> 
+							<ul style="list-style-type:none"> 
 								<li>Price: IDR 567,000</li>
 								<li>Bottle size: 500 ml</li>
  								<li>Alcohol content: 5%</li>
@@ -1873,7 +1869,7 @@
                             
                             <p>Item details
 							 </p>
-							<ul style="list-style-type:disc"> 
+							<ul style="list-style-type:none"> 
 								<li>Price: IDR 678,000</li>
 								<li>Bottle size: 500 ml</li>
  								<li>Alcohol content: 4.5%</li>
@@ -1897,8 +1893,7 @@
                 					<div class="clearfix"></div>
 
   </div> <!--row-->
- </div> <!--container-->
- </section>
+</div> <!--container-->
 
 
 <!--ABOUT-->
@@ -1907,7 +1902,7 @@
 	 <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                <img src="../../coding-party/img/p&c%20horizontal.JPG" height="182"/>
+                <img src="../../coding-party/img/p&c%20horizontal.JPG" height="200"/>
  	  				<p class="text-muted">
 	 	  			Creates classic and contemporary culinary experiences for weddings, birthdays 
 	 	  			 and other social events that will entertain and engage your guests.
@@ -1957,7 +1952,9 @@
 	 </div>
 	</section>		 
 
+
 <!--CONTACT-->
+
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -1985,19 +1982,18 @@
 <!--LOGIN-->
  	
 <div id="log-in" class="container">
-	<div id="login-form">
+  <div id="login-form">
 	 <input type="radio" checked id="login" name="switch" class="hide"/>
 	 <input type="radio" id="signup" name="switch" class="hide"/>
 		<div>
 		 	<ul class="form-header">
 			 <li> <label for="login">
-			  <i class="fa fa-lock"></i> LOGIN 
-			  <label for="login"></label></label> </li>
+			  <i class="fa fa-lock"></i> LOGIN </label> </li>
 			 <li> <label for="signup">
 			  <i class="fa fa-credit-card"></i> REGISTER</label></li>
 			</ul>
 		</div>
-	  <div class="section-out">
+	 <div class="section-out">
 		<section class="login-section">
 		<div class="login">
 		  <form action="">
@@ -2015,13 +2011,13 @@
 			 		<label >Remember Me </label>
 			 	 </span>
 			 	 <span class="remember" >
-			 	 	<a href="#" style="text-float: right">Forget Password</a>
+			 	 	<a href="#">Forget Password</a>
 			 	 </span></li>
 			 <li><input type="submit" value="SIGN IN" class="btn"/></li>
 			</ul>
 		  </form>
-		 </div>
-		<div class="social-buttons" style="text-align: center">Or sign up with &nbsp;
+		 </div><!--login-->
+		<div class="social-buttons" style="text-align: center"> Or sign up with &nbsp;
 			<a href="www.facebook.com/" >
 				<i class="fa fa-facebook" style="width: 25px; height: 25px;"></i></a>
 			<a href="www.twitter.com/" >
@@ -2032,8 +2028,9 @@
 				<i class="fa fa-google-plus" style="width: 25px; height: 25px"></i></a>
 			<a href="www.pinterest.com/" >
 				<i class="fa fa-pinterest-p" style="width: 25px; height: 25px"></i></a>
-		 </div>	 
+		</div>	 
 	</section> <!--login-section-->
+	
 	<section class="signup-section">
 	    <div class="login">
 		 <form action="">
@@ -2064,14 +2061,16 @@
 				<i class="fa fa-google-plus" style="width: 25px; height: 25px"></i></a>
 			<a href="www.pinterest.com/" >
 				<i class="fa fa-pinterest-p" style="width: 25px; height: 25px"></i></a>
-		</div>
-	 </section>
-	 </div>
-</div>
+		</div>	 
+	</section> <!--login-section-->
+  </div><!--section out-->
+</div> <!--login-form-->
+</div> <!--log-in-->
+
 
 <!---SHOPPING CART-->
 
-<div id="shoppingcart" class="menu-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true" >
+<section id="shoppingcart" class="menu-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true" >
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -2079,7 +2078,7 @@
                     </div>
                 </div>
             </div>	
-		<nav class="navbarSC">
+<!--	<nav class="navbarSC">
 			<div class="container">
 				<a class="navbar-brand" href="#contact"></a>
 				<div class="navbar-right">
@@ -2087,24 +2086,23 @@
 				</div>
 			</div>
 		</nav>
-		
+	
 			<div class="container breadcrumbBox text-center" >
 				<ol class="breadcrumb">
 					<li class="active"><a href="#shoppingcart">Shopping Cart</a></li>
 					<li><a href="#payment">Payment</a></li>
 				</ol>
 			</div>
-			<div class="container text-center">
+-->			<div class="container text-center">
 				<div class="col-md-5 col-sm-12"> 
-					<div class="bigcart"></div>
-				<a href="#contact">
+				  <div class="bigcart"></div>
+				    <a href="#contact">
 					<img src="../../coding-party/img/p&c%20logo.JPG"/> </a>
 					<h3>Your shopping cart</h3>
 				</div>
 				
 				<div class="col-md-5 col-sm-12 text-left">
-					<ul>
-						<li class="row list-inline columnCaptions">
+					<ul><li class="row list-inline columnCaptions">
 							<span>QTY</span>
 							<span>&nbsp;ITEM</span>
 							<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UNIT PRICE</span>
@@ -2147,49 +2145,43 @@
 						</li>
 						<li class="row totals">
 							<span class="order"> <a href="#payment" class="text-center"class="btn btn-xl"></a><b>ORDER</b></span>
-							<span class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    T O T A L</span>
+							<span class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+							;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    T O T A L</span>
 							<span class="totprice">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IDR 1,130,000</span>
 						</li>
 					</ul>
-                   	<button type="button" class="btn btn-primary" data-dismiss="modal"> <a href="#menu"></a><i class="fa fa-times"></i> Back </button>
+                   	<button type="button" class="btn btn-primary" data-dismiss="modal"> <i class="fa fa-times"></i> Back </button>
 				</div>
-			</div>
+			</div> <!--container-->
 		</div>
-	</div>
-<!--  </section>-->
-		
 		<!-- The popover content -->
-
 		<div id="popover" style="display: none">
 			<a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
 			<a href="#"><span class="glyphicon glyphicon-remove"></span></a>
 		</div>
-		
-</div>
+</section>
+
 
 <!--PARTNERS-->
 
-<div id= "partners" class="text-center">
+<section id= "partners" class= "no-padding" "text-center">
 	<div class="container"> <!-- Container -->
     	<div class="section-title wow fadeInDown">
       		<h2><strong>PARTNERS</strong></h2>
-      		<hr></hr> 
+      		<h4>Get special offer from our partners</h4>
       		<div class="clearfix"></div>
-      			<h4>Get special offer from our partners</h4>
-      		<div class="clearfix"></div>
-      			<h4><strong>Sign up NOW! </strong></h4>
+      		<h4><button><strong>Sign up NOW! </strong></button></h4>
       		<div class="clearfix" style="height: 100px"></div>
-      			<a href="#login"> 
+      		<a href="#login"> 
       			<img src="../../coding-party/img/p&c%20horizontal.JPG" class="img-centered" alt="" height="175"/></a>
-    		</div>
-      		<div class="clearfix" style="height: 100px"></div>
-      		
-    		  		
-    	<div class="row">
+    		 </div>
+    		    		  		
+ 	<div class="container-fluid"   		    		  		
+    	<div class="row no-gutter">
       		<div class="portfolio-items">
         			<div class="col-lg-4 col-sm-6">
          				<div class="portfolio-item wow fadeInUp" data-wow-delay="200ms">
-            				<div class="hover-bg"> <a href="www.comblangin.rumahweb.org" class="portfolio-link" data-toggle="modal">
+            				<div class="hover-bg"> <a href="www.comblangin.rumahweb.org" class="portfolio-modal" data-toggle="modal">
               					<div class="hover-text">
                 					<h4>COMBLANGIN</h4>
                 					dating agency
