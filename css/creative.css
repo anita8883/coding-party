@@ -292,7 +292,7 @@ body {
 /* H E A D E R */
 
 header {
-  background-image:url('../img/black background.jpg') /*no-repeat bottom center*/; 
+  background-image:url('../../../coding-party/img/black%20background.jpg') /*no-repeat bottom center*/; 
   height: 100%;
   background-repeat: none;
   background-attachment: scroll;
@@ -420,9 +420,9 @@ section {
 	background-color: white;
 }
 .menu btn btn-primary {
-  float : center;
+  align : center;
   position: relative;
-	
+  margin-top:100px;
 }
 .menu-box {
   position: relative;
