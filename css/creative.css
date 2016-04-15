@@ -52,14 +52,13 @@ h6 {
 .btn-primary {
   color: #fed136;
   background-color: #222222;
-  border-color:#666666;
+  border-color:none;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -94,7 +93,7 @@ fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary.active {
   color: white;
   background-color: #ffac00;
-  border-color: #fed136;
+  border-color: none;
 }
 .btn-primary .badge {
   color: #fed136;
@@ -125,7 +124,7 @@ fieldset[disabled] .btn-primary.active {
 .open .dropdown-toggle.btn-xl {
   color: #ffffff;
   background-color: #fec503;
-  border-color: #f6bf01;
+  border-color: none;
 }
 .btn-xl:active,
 .btn-xl.active,
@@ -735,9 +734,9 @@ about {
 
 /* LOGIN */
 
-#login {
+#login .ccontainer {
 	font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif; 	
-	color:#222222; 
+	color:#666; 
 	font-size:14px; color: #333;
 /*	width: 350px;
 	background: #F4f4f4;
@@ -750,10 +749,10 @@ about {
 li,ul,body,input{margin:0; padding:0; list-style:none}
 #login-form{
 	width:350px; 
-	background:#F4f4f4; 
+	background:#fff; 
 	margin:0 auto; 
-	margin-top:20px; 
-	background:#e8e8e8; 
+	margin-top:70px; 
+	background:#f8f8f8; 
 	overflow:hidden; 
 	border-radius:7px;
 	}
@@ -764,13 +763,13 @@ li,ul,body,input{margin:0; padding:0; list-style:none}
 .form-header li{
 	margin:0; line-height:60px; 
 	width:175px; text-align:center; 
-	background:#F4f4f4; font-size:18px; 
+	background:#eee; font-size:18px; 
 	float:left; 
 	transition: all 600ms ease;}
 
 /*sectiop*/
 .section-out{width:700px; float:left; transition:all 600ms ease;}
-.section-out:after{content:''; clear:both; display:table;}
+.section-out:after{content:'';  clear:both; display:table;}
 .section-out section{width:350px; float:left;}
 
 .login{padding:20px;}
@@ -793,18 +792,19 @@ li,ul,body,input{margin:0; padding:0; list-style:none}
 		background: #ff9900;
 		color: white;
 		} 
- .input{background:#eee; transition:all 800ms; width:247px; 
+ .input{background:#fff; transition:all 800ms; width:247px; 
 		border-radius:3px 0 0 3px; 
 	 	font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	 	border:solid 1px #ccc; border-right:none; outline:none;
 	 	color:#999; height:40px; line-height:40px; 
 	 	display:inline-block; padding-left:10px; font-size:16px;}
- .input,.login span.icon{vertical-align:top;}
-.input span .icon{
+ .input,.login span.icon{
+ 		vertical-align:center;
+ 		}
+.login span .icon{
 		width: 50px; transition: all 800ms; text-align: center; 
-		padding-top:8px; vertical-align: center; 
 		color: #999; height:40px; border-radius:0 3px 3px 0; 
-		background: #f4f4f4;height:40px; line-height:40px; 
+		background: #e8e8e8;height:40px; line-height:40px; 
 		display:inline-block;border:solid 1px #ccc; 
 		border-left:none; font-size:16px;}
 .input:focus:invalid{border-color:red;}
@@ -821,51 +821,30 @@ li,ul,body,input{margin:0; padding:0; list-style:none}
 	width:100%; padding:0 10px; border-radius:3px; 
 	font-size:16px; color:#fed136;
 	}
-.social-login
-/*.section-out .social-login */{
+.social-login {
 	padding:15px 20px; 
-	background:#fed136; 
+	background:#f1f1f1; 
 	border-top:solid 2px #e8e8e8; 
 	text-align:right;
 	}
-.social-login
-/*.section-out.social-buttons */ a{
+.social-login a{
 	display:inline-block; 
 	height:35px; 
 	text-align:center; 
 	line-height:35px; 
 	width:35px; 
-	margin:0 10px; 
-	background-color: #222222;
-	color: white;
+	margin:0 3px; 
 	text-decoration:none; 
+	color: #fed136;
 	}
 .form a i.fa {
-	line-height:35px}
+	line-height:35px;
 }
-#login-form ul .social-buttons {
-  	margin-bottom: 0;
-  	vertical-align: top;
-  	padding: auto;
-	}
-#login-form ul .social-buttons li a {
-    display: block;
-  	background-color: #222222;
-  	height: 40px;
-  	width: 40px;
-  	border-radius: 100%;
-  	font-size: 20px;
-  	line-height: 40px;
-  	color: white; 
-  	outline: none;
-  	-webkit-transition: all 0.3s;
-  	-moz-transition: all 0.3s;
-  	transition: all 0.3s;
-	} 
+
 /*#login-form ul.social-buttons li*/ .social-login a:hover,
 /*#login-form ul.social-buttons li*/ .social-login a:focus,
 /*#login-form ul.social-buttons li*/ .social-login a:active {
-  	background-color: #222222;
+  	background-color: #ffac00;
   	color: white;
 	}
 .remember{width:50%; display:inline-block; clear:both; font-size:14px;}
@@ -878,16 +857,14 @@ li,ul,body,input{margin:0; padding:0; list-style:none}
 #login:checked~.section-out{margin-left:0px;}
 #login:checked~div .form-header li:nth-child(1),
 #signup:checked~div .form-header li:nth-child(2) {
-	background:#fed136;
+	background:#e8e8e8;
 	}
 
 <!--SHOPPING CART-->
 
-/*-----------------------------------
-	Navbar 
------------------------------------*/
 shoppingcart{
-	margin: 0px 50px 100px 50px;
+	font-size: 14px;
+	background-color: #f4f4f4;
 	}
 ul {
 	list-style-type: none;
@@ -896,30 +873,34 @@ ul {
 a: hover{
 	text-decoration: none;
 	}
+
+/*-----------------------------------
+	Navbar 
+-----------------------------------*/
 	
 .minicart{
 /*	background-image:url('../img/sprite.png');
 	background-position: -156px 11px;
 	background-repeat:no-repeat;
-	width: auto;
-	max-height: 30px;
+	width: 40px;
+	max-height: 50px;
 	padding-right: 32px;
 	color: Red;
-*/	background:url:url('../../coding_party_repo/coding-party/img/p&c logo.JPG');
+*/	background:url:url('../img/p&c horizontal - Copy.JPG');
 	background-position: -156px 11px;
 	background-repeat:no-repeat;
 	width: 40px;
-	height: 50px;
+	height: auto;
 	padding-right: 32px;
 	}
-
-navbar{
+/*
+.navbar{
 	background-color:#FFEDB0;
 	padding: 15px ;
 	border-radius: 0;
 	margin: 0;
 }
-/*.navbar-brand{
+.navbar-brand{
 	color: #fed503;
   	font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 	padding-left: 32px;
@@ -951,26 +932,22 @@ navbar{
 	}
 
 .breadcrumb{
-	margin-bottom: 10px;
+	margin-bottom: 100px;
 	background-color:#ffffff;
 	}
 
 .breadcrumbBox{
 	background-color: #ffffff;
 	height: 100px;
-	margin-bottom: 20px;
-	padding-top: 12px;
+	margin-bottom: 100px;
+	padding-top: 32px;
 	}
-	
-.breadcrumbBox .breadcol-md-5.col-sm-12 ul.li .btn .btn-primary {
-	background-color: #fed136;
-	color: #EA2C26;
-	}
+
 /*----------------------------------- 
 	Main
 -----------------------------------*/
 
-#shoppingcart.container.text-center{
+.container.text-center{
 	padding: 0 32px;
 	}
 
@@ -978,92 +955,77 @@ navbar{
 	Logo and description 
 ----------------------------------- */
 
-#shoppingcart.col-md-5.col-sm-12{
+.col-md-5.col-sm-12{
 	padding: 0;
 	}
 
-#shoppingcart.col-md-5.col-sm-12 h3{
+.col-md-5.col-sm-12 h3{
 	color: #595c5f;
 	font-size: 24px;
 	font-weight: bold;
-	max-width: 400px;
 	margin-bottom:30px;
 	text-align: center;
 	}
 
-#shoppingcart.col-md-5.col-sm-12 p{
-	color: #ffac00;
-	line-height: 1.5;
-	font-size: 28px;
-	max-width: 400px;
-	font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
-	text-align: center;
-	}
-
-#shoppingcart.bigcart{
+.bigcart{
 	background:url url('../img/p&c logo.JPG');
 	background-position: 0px 11px;
 	background-repeat:no-repeat;
-	width: auto;
-	max-height: 350px;
-	margin:20 0 40px 60px;
-	}
-
-#shoppingcart.bigcart ul li span{
-	margin-top: 10px;
+	width: /*auto*/ 155px;
+	height: auto;
+/*	max-height: 350px;
+*/	margin:20 0 40px 60px;
 	}
 
 /*-----------------------------------  
 	Cart items list
 -----------------------------------*/
 
-#shoppingcart.col-md-7.col-sm-12{
-	padding-left: 10px ;
+.col-md-7.col-sm-12{
+	padding-left: 50px ;
 	margin-bottom: 72px;
-	float: center;
-	}
+/*	float: center;
+*/	}
 
-#shoppingcart.row{
+.row{
 	box-shadow: 0 1px 0 #e1e5e8;
 	padding-bottom :0;
-	padding-left: 5px;
+	padding-left: 15px;
 	background-color: #ffffff;
 	margin-bottom: 11px;
 	}
 
-#shoppingcart.row span{
-	padding: 10px 0 6px 0;
+.row span{
+	padding: 20px 0 6px 0;
 	}
 
 /* Column Captions */
 
-#shoppingcart ul li span{
-	color: #595c5f;
+.columnCaptions {
+	color: #f4f4f4;
 	font-size:12px;
 	text-transform: uppercase;
-	padding: 5px 0 0 0;
+	padding: 0;
 	box-shadow: 0 0 0;
 	background-color:#fed136;
 	}
 
-#shoppingcart ul li span:first-child{
-	padding-left:18px;
+.columnCaptions span:first-child{
+	padding-left:100px;
 	}
-#shoppingcart ul li span:second-child{
-	padding-left:18px;
+.columnCaptions span:second-child{
+	padding-left:35px;
 	}
-#shoppingcart ul li span:third-child{
-	padding-left:32px;
+.columnCaptions span:third-child{
+	padding-right:20px;
+	float: right;
 	}
 
-#shoppingcart ul li span{
+.columnCaptions span{
 	padding: 0 20px 0 0;
 	}
-#shoppingcart.ul.li span:fourth child{
-	padding: 0 122px 0 0;
-	}
 
-#shoppingcart.ul.li span:last-child{
+.columnCaptions span:last-child{
 	float: right;
 	padding-right: 82px;
 	}
@@ -1071,7 +1033,7 @@ navbar{
 
 /* Items */
 
-.span.quantity{	
+.quantity{	
 	color: #ffac00;
 	font-size :18px;
 	font-weight: bold;
@@ -1079,39 +1041,39 @@ navbar{
 	width: 42px;
 	padding-left: 7px;
 	}
-.span.itemName{	
+.itemName{	
 	color: #727578;
 	font-size :16px;
 	font-weight: bold;
 	float: left;
 	padding-left:25px;
 	}
-.span.price{	
+.price{	
 	color: #727578;
 	font-size :16px;
 	font-weight: bold;
-	float: left;
-	padding-left:300px;
+	float: right;
+	padding-right:100px;
 	}
-.span.totprice{	
+.totprice{	
 	color: #727578;
 	font-size :16px;
 	font-weight: bold;
-	float: left;
-	padding-left:300px;
+	float: right;
+	padding-right:25px;
 	}
 
-#shoppingcart.popbtn{
-	background-color:#FFEDB0;
-	margin-left: 25px;
-	height: 33px;
+.popbtn{
+	background-color:#D4D4D4;
+	margin-left: 0px;
+	height: 63px;
 	width: 40px;
 	padding: 32px 0 0 14px !important;
 	float: left;
 	cursor: pointer;
 	}
 
-#shoppingcart.arrow{
+.arrow{
 	width: 0; 
 	height: 0; 
 	border-left: 6px solid transparent;
@@ -1119,27 +1081,25 @@ navbar{
 	border-top: 6px solid #727578;
 	}
 
-.price{
-	color: #EA2C26;
-	font-size :18px;
-	font-weight: bold;
-	float: right;
-	padding-right: 230px;
-	}
-
 
 /* Totals */
 
 .totals{
-	background-color: #fed136;
+	background-color: #f4f4f4;
 	}
 
 .totals span{
-	padding: 30px 50px 30px 0;
+	padding: 10px 50px 10px 50;
 	}
 
 .totals .price{
 	float: right;
+	padding-right: 100px;
+	}
+
+.totals .totprice{
+	float: right;
+	padding-right: 25px;
 	}
 
 .totals .itemName{
@@ -1147,7 +1107,7 @@ navbar{
 	}
 
 .totals .order{
-	float: left;
+	float: center;
 	padding: 0;
 	margin-top: 30px; 
 	padding-left: 45px;
@@ -1179,7 +1139,7 @@ navbar{
 	border-radius: 3px;
 	box-shadow: 0 0 1px 1px rgba(0,0,0,0.2);
 	border: 0;
-	background-color:#FFFF99;
+	background-color:#FFFFff;
 	}
 
 .popover.bottom{
@@ -1193,7 +1153,7 @@ navbar{
 	}
 
 .glyphicon-pencil{
-	color: #858e97;
+	color: #727578;
 	margin: 7px 12px 7px 10px;
 	}
 
@@ -1336,6 +1296,7 @@ navbar{
 }
 
 /*PARTNERS*/
+
 .partners container{
 	padding: 300px 0 5% 0;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c1a618+0,f1c40f+25,f1c40f+75,c1a618+100 */
@@ -1360,57 +1321,6 @@ navbar{
 .partners hr {
 	background: #fec136;
 	}
-/*
-ul.cat li {
-	display: inline-block;
-	}
-ol.type li {
-	display: inline-block;
-	margin-left: 20px;
-	}
-ol.type li a {
-	color: #51633d;
-	border: 1px solid #f7dc6f;
-	padding: 8px 16px;
-	border-radius: 3px;
-	}
-ol.type li a.active {
-	background: #f7dc6f;
-	}
-ol.type li a:hover {
-	background: #f7dc6f;
-	}
-.isotope-item {
-	z-index: 2
-}
-.isotope-hidden.isotope-item {
-	z-index: 1
-}
-.isotope, .isotope .isotope-item {
-	 change duration value to whatever you like */
-/*	-webkit-transition-duration: 0.8s;
-	-moz-transition-duration: 0.8s;
-	transition-duration: 0.8s;
-}
-.isotope-item {
-	margin-right: -1px;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-.isotope {
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-transition-property: height, width;
-	-moz-transition-property: height, width;
-	transition-property: height, width;
-}
-.isotope .isotope-item {
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-transition-property: -webkit-transform, opacity;
-	-moz-transition-property: -moz-transform, opacity;
-	transition-property: transform, opacity;
-}*/
 .portfolio-items {
 	margin-bottom: 30px;
 }

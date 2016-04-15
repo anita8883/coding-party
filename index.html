@@ -2045,20 +2045,20 @@
 		</div>
 	 <div class="section-out">
 	  <section class="login-section">
-		<div class="log-in">
+		<div class="login">
 		  <form action="">
 			<ul class="ul-list">
 			 <li><input type="email" required class="input" placeholder="Your Email"/>
-			 	<span class="icon" vertical_float="center">
+			 	<span class="icon" >
 			 		<i class="fa fa-user"  ></i>
 			 	</span></li>
 			 <li><input type="password" required class="input" placeholder="Password"/>
-			 	<span class="icon" vertical_float="center">
+			 	<span class="icon" >
 			 		<i class="fa fa-lock" ></i>
 			 	</span></li>
 			 <li><span class="remember">
-			 		<input type="checkbox"value=""checked id="check" /> 
-			 		<label >Remember Me </label>
+			 		<input type="checkbox" id="check" value=""checked /> 
+			 		<label for="check">Remember Me </label>
 			 	 </span>
 			 	 <span class="remember" >
 			 	 	<a href="#">Forget Password</a>
@@ -2067,22 +2067,22 @@
 			</ul>
 		  </form>
 		 </div><!--login-->
-		<div class="social-buttons" style="text-align: center"> Or sign up with &nbsp;
-			<a href="www.facebook.com/" >
-				<i class="fa fa-facebook" style="width: 25px; height: 25px;"></i></a>
-			<a href="www.twitter.com/" >
-				<i class="fa fa-twitter" style="width: 25px; height: 25px"></i></a>
-			<a href="www.instagram.com/" >
-				<i class="fa fa-instagram" style="width: 25px; height: 25px"></i></a>
-			<a href="www.google-plus.com/">
-				<i class="fa fa-google-plus" style="width: 25px; height: 25px"></i></a>
-			<a href="www.pinterest.com/" >
-				<i class="fa fa-pinterest-p" style="width: 25px; height: 25px"></i></a>
+		<div class="social-login" > Or sign up with &nbsp;
+			<a href="www.facebook.com/" class="bg" >
+				<i class="fa fa-facebook" ></i></a>
+			<a href="www.twitter.com/"  class="bg" >
+				<i class="fa fa-twitter" ></i></a>
+			<a href="www.instagram.com/"  class="bg">
+				<i class="fa fa-instagram" ></i></a>
+			<a href="www.google-plus.com/"  class="bg">
+				<i class="fa fa-google-plus"></i></a>
+			<a href="www.pinterest.com/"  class="bg">
+				<i class="fa fa-pinterest-p" ></i></a>
 		</div>	 
 	  </section> <!--login-section-->
 	
 	  <section class="signup-section">
-	    <div class="log-in">
+	    <div class="login">
 		 <form action="">
 			<ul class="ul-list">
 				<li><input type="email" required class="input" placeholder="Your Email"/>
@@ -2100,17 +2100,17 @@
 			</ul>
 		  </form>
 		</div>
-		<div class="social-buttons" style="text-align: center">Or sign up with &nbsp;
-			<a href="www.facebook.com/" >
-				<i class="fa fa-facebook" style="width: 25px; height: 25px"></i></a>
-			<a href="www.twitter.com/" >
-				<i class="fa fa-twitter" style="width: 25px; height: 25px"></i></a>
-			<a href="www.instagram.com/" >
-				<i class="fa fa-instagram" style="width: 25px; height: 25px"></i></a>
-			<a href="www.google-plus.com/">
-				<i class="fa fa-google-plus" style="width: 25px; height: 25px"></i></a>
-			<a href="www.pinterest.com/" >
-				<i class="fa fa-pinterest-p" style="width: 25px; height: 25px"></i></a>
+		<div class="social-login" > Or sign up with &nbsp;
+			<a href="www.facebook.com/" class="bg" >
+				<i class="fa fa-facebook" ></i></a>
+			<a href="www.twitter.com/"  class="bg" >
+				<i class="fa fa-twitter" ></i></a>
+			<a href="www.instagram.com/"  class="bg">
+				<i class="fa fa-instagram" ></i></a>
+			<a href="www.google-plus.com/"  class="bg">
+				<i class="fa fa-google-plus"></i></a>
+			<a href="www.pinterest.com/"  class="bg">
+				<i class="fa fa-pinterest-p" ></i></a>
 		</div>	 
 	  </section> <!--signup-section-->
      </div><!--section out-->
@@ -2156,56 +2156,57 @@
 				
 				<div class="col-md-5 col-sm-12 text-left center-block">
 					<ul><li class="row list-inline columnCaptions">
-							<span>QTY</span>
-							<span>ITEM</span>
-							<span>UNIT PRICE</span>
-							<span>PRICE</span>
+							<span class="popbtn"></span>
+							<span class="quantity">QTY</span>
+							<span class="itemName"> I   T   E   M </span>
+							<span class="price">P R I C E</span>
+							<span class="unitprice">UNIT PRICE</span>
 						</li>
 						<li class="row">
 							<span class="popbtn"><a class="arrow"></a></span>
 							<span class="quantity">1</span>
 							<span class="itemName">Salmon Terrine</span>
 							<span class="price">IDR 123,000</span>
-							<span class="totprice">IDR 123,000</span>
+							<span class="unitprice">IDR 123,000</span>
 						</li>
 						<li class="row">
 							<span class="popbtn"><a class="arrow"></a></span>
 							<span class="quantity">1</span>
 							<span class="itemName">Petite Assortments</span>
 							<span class="price">IDR 123,000</span>
-							<span class="totprice">IDR 123,000</span>
+							<span class="unitprice">IDR 123,000</span>
 						</li>
 						<li class="row">
 							<span class="popbtn"><a class="arrow"></a></span>
 							<span class="quantity">2</span>
 							<span class="itemName">Meatball Lollipops</span>
-							<span class="price">IDR 67.000</span>				
-							<span class="totprice">IDR 134.000</span>				
+							<span class="price">IDR 134.000</span>				
+							<span class="unitprice">IDR 67.000</span>				
 						</li>
 						<li class="row">
 							<span class="popbtn"><a class="arrow"></a></span>
 							<span class="quantity">1</span>
 							<span class="itemName">Chicken Kebab</span>
 							&nbsp;<span class="price">IDR 567,000</span>
-							<span class="totprice">IDR 567,000</span>
+							<span class="untprice">IDR 567,000</span>
 						</li>
 						<li class="row">
 							<span class="popbtn"  data-parent="#asd" data-toggle="collapse" data-target="#demo"><a class="arrow"></a></span>
 							<span class="quantity">2</span>
 							<span class="itemName">Deep-Filled Vol-Au-Vents</span>
-							<span class="price">IDR 78,000</span>
-							<span class="totprice">IDR 156,000</span>				
+							<span class="price">IDR 156,000</span>
+							<span class="unitprice">IDR 78,000</span>				
 						</li>
 						<li class="row totals">
-							<span></span>
-							<span class="price">T O T A L</span>
-							<span class="totprice"><b>IDR 1,130,000</b></span>
+							<span class="itemName"><button type="button" class="btn btn-primary" data-dismiss="modal"> 
+								<i class="fa fa-times"></i> BACK </button></span>
+							<span class="price">IDR 1,130,000</span>
+							<span class="unitprice"><b>T O T A L</b></span>
 						</li>
 					</ul>
-					<span class="item"><button type="button" class="btn btn-primary" data-dismiss="modal"> 
-						<i class="fa fa-times"></i> Back </button></span>
-                   	<span class="totprice"> <button type="button" class="btn btn-primary" data-dismiss="modal">
-						<a href="#payment"></a> <b>ORDER</b> </button></span>
+					<span></span>
+                   	<span class="unitprice"> <button type="button" class="btn btn-primary" data-dismiss="modal">
+						<a href="#payment"></a> <b>O R D E R</b> </button></span>
 				</div>
 			</div> <!--container-->
 		</div>
