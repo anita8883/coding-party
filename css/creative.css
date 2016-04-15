@@ -601,13 +601,13 @@ img::-moz-selection {
 }
 
 .menu-modal .close-modal {
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  background-color: transparent;
-  top: 25px;
-  right: 25px;
-  cursor: pointer;
+  	position: absolute;
+	top: 25px;
+	right: 25px;
+	width: 50px;
+	height: px;
+	background-color: transparent;
+	cursor: pointer;
 }
 .menu-modal .close-modal:hover {
   opacity: 0.3;
@@ -644,15 +644,14 @@ img::-moz-selection {
 /* A B O U T */  
 
 about {
-  margin-top: 200px 
-  position:relative;
+  margin-top: 100px; 
+  position:absolute;
   width: 100%;
 }
 
 .col-lg-12 p.text-muted{
   padding-bottom:0;
-  margin: 0px auto 100px 0;	
-  padding:0 10px 0 10px;
+  margin: 0px 100px auto 100px;	
 }
 .img {
   max-width: 70%;
@@ -662,14 +661,14 @@ about {
 .about-box {
   position: relative;
   max-width: 350px;
-  margin: 230px auto 0 0;
+  margin: 120px auto 0 0;
    display: block;
   }
 @media (min-width: 992px) {
 .about-box{
     margin: 20px auto 0;
   }
-.container{
+/*.container{
 	width:auto;
 	max-width: 700px;
 }
@@ -679,7 +678,7 @@ about {
   padding-bottom:0;
   margin-bottom:20px;	
   padding:0 auto ;
-}
+*/}
 
 .about-box p{
 	margin-bottom: 20px;
@@ -725,7 +724,7 @@ about {
 
 .container {
 	margin:10px auto auto auto;
-	padding: 0 20px 0 20px;
+	width: auto;
 	}	
 .img {
 	margin-bottom: 10px;
@@ -734,18 +733,11 @@ about {
 
 /* LOGIN */
 
-#login .ccontainer {
+#login .container {
 	font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif; 	
 	color:#666; 
 	font-size:14px; color: #333;
-/*	width: 350px;
-	background: #F4f4f4;
-	margin: 0 auto;
-	margin-top: 230px;
-	background: #f8f8f8;
-	overflow: hidden;
-	border-radius: 7px;
-*/	}
+	}
 li,ul,body,input{margin:0; padding:0; list-style:none}
 #login-form{
 	width:350px; 
@@ -776,7 +768,7 @@ li,ul,body,input{margin:0; padding:0; list-style:none}
 	.ul-list{clear:both; display:table; width:100%;}
 	.ul-list:after{content:''; clear:both; display:table;}
 	.ul-list li{ margin:0 auto; margin-bottom:12px; }
-  	.ul-list li btn{
+/*  	.ul-list li btn{
 		border:none; outline:none; background:#fed136; 
 		border-bottom:solid 4px #222222; 
 		font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif; 
@@ -784,7 +776,7 @@ li,ul,body,input{margin:0; padding:0; list-style:none}
 		height:40px; width:100%; 
 		padding:0 10px; border-radius:3px; 
 		font-size:22px; color:white; background:#fed136}
-	.ul-list li btn:hover,
+*/	.ul-list li btn:hover,
 	.ul-list li btn:focus,
 	.ul-list li btn:active,
 	.ul-list li btn.active {
@@ -841,14 +833,13 @@ li,ul,body,input{margin:0; padding:0; list-style:none}
 	line-height:35px;
 }
 
-/*#login-form ul.social-buttons li*/ .social-login a:hover,
-/*#login-form ul.social-buttons li*/ .social-login a:focus,
-/*#login-form ul.social-buttons li*/ .social-login a:active {
-  	background-color: #ffac00;
-  	color: white;
+.social-login a:hover,
+.social-login a:focus,
+.social-login a:active {
+  	color: #ffac00;
 	}
 .remember{width:50%; display:inline-block; clear:both; font-size:14px;}
-.remember:nth-child(2){text-align:right; !important}
+.remember:nth-child(2){text-align:right;}
 .remember a{text-decoration:none; color:#666;}
 /*.hide{display:none}
 */
@@ -1297,19 +1288,19 @@ a: hover{
 
 /*PARTNERS*/
 
-.partners container{
-	padding: 300px 0 5% 0;
+#partners container{
+	padding: 300px 0;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c1a618+0,f1c40f+25,f1c40f+75,c1a618+100 */
 	background: white;
 	margin: 100px 0;
-	text-align: center;
+	text-align: center !important;
 	}
-.partners i.fa {
+partners i.fa {
 	font-size: 30px;
 	padding: -15px;
 	color: #fed136;
   	}
-.partners a img {
+partners a img {
 	position: relative ;
 	max-height: 250px;
 	float: center;
@@ -1317,9 +1308,9 @@ a: hover{
 	}
 .portfolio-item img.img-responsive{
 	position: center;
-	}
+	vertical-align: center}
 .partners hr {
-	background: #fec136;
+	background: #fed136;
 	}
 .portfolio-items {
 	margin-bottom: 30px;
@@ -1334,11 +1325,11 @@ a: hover{
 	text-align: center;
 	margin: 0 auto;
 	color: #fec136;
-	background: rgba(3, 46, 58, 0.8);
+	background: #222222;
 	padding: 25% 0;
 	height: 100%;
 	width: 100%;
-	opacity: 0;
+	opacity: 0.8;
 	transition: all 0.5s;
 }
 .hover-bg .hover-text>h4 {
@@ -1409,7 +1400,6 @@ a: hover{
 	cursor: pointer;
 }
 .portfolio-modal .close-modal:hover {
-	background: #222222;
 	opacity: 0.3;
 }
 .portfolio-modal .close-modal .lr {
