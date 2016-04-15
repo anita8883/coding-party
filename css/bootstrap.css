@@ -6203,6 +6203,7 @@ button.close {
 }
 .carousel-inner {
   position: relative;
+  background:none;
   width: 100%;
   overflow: hidden;
 }
