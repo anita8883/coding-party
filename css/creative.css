@@ -357,10 +357,44 @@ header .intro-text .intro-heading {
 
 /* M E N U */
 
+#myCarousel {
+	margin: 50px 0 50px 0;
+	}
+#myCarousel .carousel-inner {
+  	position: center;
+  	width: 100%;
+  	overflow: hidden;
+	}
+
+ 	overflow: hidden;
+	}
+.mycarousel
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    height:cover; width: cover;
+    float: center !important;
+    align:center;
+    margin: 0;
+    background:black;
+    }
+.container {
+ 	padding:0px 0px 0 0 ;
+ 	background: none;
+ 	width:100%;
+ 	height: 100%;
+ 	position:relative, center;
+ 	}
+ 	
+.item {
+	float: middle;
+	height:400px;
+	margin: 100px 0 50px 0;			
+	}
+
 #menu{
 	/*margin-top: 100px;
-	padding: 50px;
-	*/background-color: white;
+	padding-top: 50px;*/
+	background-color: white;
 	}
 #menu .menutype container{
   position: relative;
@@ -400,37 +434,16 @@ header .intro-text .intro-heading {
 	border-radius: 0.3;
 }
 */
-#myCarousel {
-	margin: 50px 0 50px 0;
-	}
-#myCarousel .carousel-inner {
-  	position: relative;
-  	width: 100%;
-  	overflow: hidden;
-	}
-
- 	overflow: hidden;
-	}
-.mycarousel
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-    height:cover; width: cover;
-    float: center !important;
-    align:center;
-    margin: 0;
-    background-color:white;
-    }
-.container {
- 	padding:0px 0px 0 0 ;
- 	background: none;
- 	width:100%;
- 	height: 100%;
- 	position:relative, center;
- 	}
- 	
-.item {
-	height:100%;		
-	}
+.navbar-toggle {
+	border-radius: 0;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: #f3ca27;
+	border-color: #f3ca27;
+}
+.navbar-default .navbar-toggle:hover>.icon-bar {
+	background-color: #FFF;
+}
 
 /*<!--
 .modal-header, h4, .close {
@@ -642,7 +655,7 @@ img::-moz-selection {
 /* A B O U T */  
 
 about {
-  margin-top: 80px; 
+  margin-top: 180px; 
   position:absolute;
 }
 
@@ -684,6 +697,9 @@ about {
 
 .no-padding {
   padding: 0;
+}
+.clearfix {
+	display: block;
 }
 @media (max-width: 768px) {
 .about-box {

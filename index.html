@@ -35,15 +35,20 @@
 <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
--->	<script type="text/javascript" src="../../coding-party/js/wow.min.js"></script> 
+-->	<script type="text/javascript" src="js/wow.min.js"></script> 
+	<script type="text/javascript" src="js/jquery.isotope.js"></script>
+	<script type="text/javascript" src="js/customjs.js"></script>
+	<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+	<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+	<script type="text/javascript" src="js/contact_me.js"></script> 
+	<script type="text/javascript" src="js/owl.carousel.js"></script> 
 <!--<script src="js/jquery-1.11.0.min.js"></script> 
 	<script src="js/bootstrap.min.js"></script>
--->	<script src="../../coding-party/js/script.js" type="text/javascript"></script>
-   <script src="js/bootstrap.js" type="text/javascript"></script>
-
+-->	<script src="" type="text/javascript"></script>
+   	<script src="js/bootstrap.js" type="text/javascript"></script>
     <!--[if lt IE 9]>
-        <script src="../../coding-party/js/html5shiv.js"></script>
-        <script src="../../coding-party/js/respond.min.js"></script>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
     <![endif]-->
 
     <!-- jQuery -->
@@ -130,29 +135,117 @@
 
  <div id="menu" class="no-padding" "container-fluid">
 
-    <div class="menutype" "container">
+	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+	<ol class="carousel-indicators"> 
+     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+     <li data-target="#myCarousel" data-slide-to="1"></li>
+     <li data-target="#myCarousel" data-slide-to="2"></li>
+     <li data-target="#myCarousel" data-slide-to="3"></li>
+     <li data-target="#myCarousel" data-slide-to="4"></li>
+     <li data-target="#myCarousel" data-slide-to="5"></li>
+     <li data-target="#myCarousel" data-slide-to="6"></li>
+     <li data-target="#myCarousel" data-slide-to="7"></li>
+     <li data-target="#myCarousel" data-slide-to="8"></li>
+     <li data-target="#myCarousel" data-slide-to="9"></li>
+     <li data-target="#myCarousel" data-slide-to="10"></li>
+    	 </ol>
+
+	  	<div class="carousel-inner" role="listbox">
+    	 <div class="item active">
+	      <img src="../../coding-party/img/cookies%20background.jpeg"
+	      alt="Slide0"/> <!--width="460px" height="550px"--> </div>
+	     <div class="item">
+    	  <img src="./../coding-party/img/background%20blackberry.jpg"
+    	  alt="Slide1"/></div>
+	     <div class="item">
+	      <img src="../../coding-party/img/background%20mix.jpg"
+    	  alt="Slide2"/></div>
+	     <div class="item">
+	      <img src="../../coding-party/img/background%20love.jpg"
+    	  alt="Slide3"/></div>
+	     <div class="item">
+	      <img src
+	      ="../../coding-party/img/background%20kids.jpg"
+    	  alt="Slide4"/></div>
+	     <div class="item">
+	      <img src="../../coding-party/img/background%20m&s.jpg"
+    	  alt="Slide5"/></div>
+	     <div class="item">
+	      <img src="../../coding-party/img/topped%20pork%20pies.jpg"
+    	  alt="Slide6" /></div>
+   	     <div class="item">
+	      <img src="../../coding-party/img/mini%20topped%20canape%20platters.jpg"
+    	  alt="Slide7" /></div>
+  	     <div class="item">
+	      <img src="../../coding-party/img/Mini-Spinach-Lasagna-Roll-Ups.jpg"
+    	  alt="Slide8" /></div>
+   	     <div class="item">
+	      <img src="../../coding-party/img/fruit%20mousse.jpg"
+    	  alt="Slide9"/></div>
+   	     <div class="item">
+	      <img src="../../coding-party/img/partyfried.jpg"
+    	  alt="Slide10"/></div>
+	    </div>
+	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    	<span class="sr-only">Previous</span>
+  	 </a>
+  	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    	<span class="sr-only">Next</span>
+  	 </a>
+   </div> 
+  </div>
+                  					<div class="clearfix"></div>
+                					<div class="clearfix"></div>
+    	<div>
+    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#categories1"> 
+      	<span class="sr-only">Toggle navigation</span> 
+      	<span class="icon-bar"></span> 
+      	<span class="icon-bar"></span> 
+      	<span class="icon-bar"></span> 
+      	<span class="icon-bar"></span> 
+      	</button>
+      	</div> 
+    		<div class="category collapse navbar-collapse" id="catmenu">
+      			<ul class="cat">
+        		<li>
+          			<ol class="type">
+            			<li><a href="#" data-filter="*" class="active">All</a></li>
+            			<li><a href="#" data-filter=".entree">ENTRE&Eacute;</a></li>
+            			<li><a href="#" data-filter=".main">MAIN COURSE</a></li>
+            			<li><a href="#" data-filter=".dessert">DESSERT</a></li>
+            			<li><a href="#" data-filter=".dessert">WINE</a></li>
+          			</ol>
+       			</li>
+      			</ul>
+      		
+      			<div class="clearfix"></div>
+    		</div>
+    	
+    <div class="menutype container">
      	<div class="col-md-3 col-md-6 text-center">
 	         <div class="about-box"><p></p>
 	      	 <button type="button" class="btn btn-primary">
-				<a href="#entree"> ENTRE&Eacute;</a> </button>
+				<li><a href="#entree"> ENTRE&Eacute;</a></li> </button>
 			 </div>
 		 </div>
 	    <div class="col-md-3 col-md-6 text-center">
 	         <div class="about-box"> <p></p>
-	      	 <button type="button" class="btn btn-xl">
-				<a href="#main"> MAIN COURSE</a> </button>
+	      	 <button type="button" class="btn btn-primary">
+				<li><a href="#main"> MAIN COURSE</a></li> </button>
 			 </div>
 		 </div>
 	    <div class="col-md-3 col-md-6 text-center">
 	         <div class="about-box"><p></p>
-	      	 <button type="button" class="btn btn-xl">
-				<a href="#dessert"> DESSERT</a> </button>
+	      	 <button type="button" class="btn btn-primary">
+				<li><a href="#dessert"> DESSERT</a></li> </button>
 			 </div>
 		 </div>
 	    <div class="col-md-3 col-md-6 text-center">
 	         <div class="about-box"><p></p>
-	      	 <button type="button" class="btn btn-xl">
-				<a href="#wine"> WINE</a> </button>
+	      	 <button type="button" class="btn btn-primary">
+				<li><a href="#wine"> WINE</a></li> </button>
 			 </div>
 		 </div>
 	 </div> <!--menutype-->
@@ -176,69 +269,6 @@
 	 </ul>
 -->	
 
-	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="1800">
-	<ol class="carousel-indicators"> 
-     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-     <li data-target="#myCarousel" data-slide-to="1"></li>
-     <li data-target="#myCarousel" data-slide-to="2"></li>
-     <li data-target="#myCarousel" data-slide-to="3"></li>
-     <li data-target="#myCarousel" data-slide-to="4"></li>
-     <li data-target="#myCarousel" data-slide-to="5"></li>
-     <li data-target="#myCarousel" data-slide-to="6"></li>
-     <li data-target="#myCarousel" data-slide-to="7"></li>
-     <li data-target="#myCarousel" data-slide-to="8"></li>
-     <li data-target="#myCarousel" data-slide-to="9"></li>
-     <li data-target="#myCarousel" data-slide-to="10"></li>
-    	 </ol>
-
-	  	<div class="carousel-inner" role="listbox">
-    	 <div class="item active">
-	      <img src="../../coding-party/img/cookies%20background.jpeg"
-	      alt="Slide1" width="460px" height="550px"/></div>
-	     <div class="item">
-    	  <img src="../../coding-party/img/background%20blackberry.jpg"
-    	  alt="Slide2" width="460px" height="550px"/></div>
-	     <div class="item">
-	      <img src="../../coding-party/img/background%20mix.jpg"
-    	  alt="Slide3" width="460px" height="550px"/></div>
-	     <div class="item">
-	      <img src="../../coding-party/img/background%20love.jpg"
-    	  alt="Slide4" width="460px" height="550px"/></div>
-	     <div class="item">
-	      <img src
-	      ="../../coding-party/img/background%20kids.jpg"
-    	  alt="Slide1" width="460px" height="550px"/></div>
-	     <div class="item">
-	      <img src="../../coding-party/img/background%20m&s.jpg"
-    	  alt="Slide1" width="460px" height="550px"/></div>
-	     <div class="item">
-	      <img src="../../coding-party/img/topped%20pork%20pies.jpg"
-    	  alt="Slide1" width="460px" height="550px"/></div>
-   	     <div class="item">
-	      <img src="../../coding-party/img/mini%20topped%20canape%20platters.jpg"
-    	  alt="Slide1" width="460px" height="550px"/></div>
-  	     <div class="item">
-	      <img src="../../coding-party/img/Mini-Spinach-Lasagna-Roll-Ups.jpg"
-    	  alt="Slide1" width="460px" height="550px"/></div>
-   	     <div class="item">
-	      <img src="../../coding-party/img/fruit%20mousse.jpg"
-    	  alt="Slide1" width="460px" height="550px"/></div>
-   	     <div class="item">
-	      <img src="../../coding-party/img/partyfried.jpg"
-    	  alt="Slide1" width="460px" height="550px"/></div>
-	    </div>
-	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    	<span class="sr-only">Previous</span>
-  	 </a>
-  	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    	<span class="sr-only">Next</span>
-  	 </a>
-   </div> 
-  </div>
-                  					<div class="clearfix"></div>
-                					<div class="clearfix"></div>
 
 
 <!--ENTREE-->
@@ -246,7 +276,8 @@
  <div id="entree" class="container-fluid" >
    <div class="row no-gutter">       
 				
-				<div class="col-md-4 col-sm-6">
+				<div class="portfolio-items">
+				<div class="col-md-4 col-sm-6 entree">
 				    <a href="#Deep-FilledVol-Au-Vents" class="menu-box" data-toggle="modal"> 
                         <img src="../../coding-party/img/veg%20vol.jpg" width="450px" class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption">
@@ -306,7 +337,7 @@
 	    </div> <!--menu-modal-->
 	</div> <!--modal-content-->
 	
-            	<div class="col-md-4 col-sm-6">
+            	<div class="col-md-4 col-sm-6 entree">
                     <a href="#ChickenLollipops" class="menu-box" data-toggle="modal">
                         <img src="../../coding-party/img/asian%20style%20chicken%20lollipop.jpg" width="450px"class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption">
@@ -367,7 +398,7 @@
 	    </div>
 	</div>
                 
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-6 entree">
                     <a href="#ItalianBreadSelection" class="menu-box" data-toggle="modal">
                         <img src="../../coding-party/img/italian%20breaad%20seletion.jpg"width="450px"class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption">
@@ -429,7 +460,7 @@
                 					<div class="clearfix"></div>
                 					<div class="clearfix"></div>
                 
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-6 entree">
                     <a href="#LuxuryCanape" class="menu-box" data-toggle="modal"> 
                         <img src="../../coding-party/img/luxury%20canape%20selections.jpg" width="450px" class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption">
@@ -489,7 +520,7 @@
         </div>
     </div>
                 
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-4 col-sm-6 entree">
                     <a href="#QuicheBites" class="menu-box"data-toggle="modal">
                         <img src="../../coding-party/img/quiche%20bites.jpg" width="450px" class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption">
@@ -548,7 +579,7 @@
         </div>
     </div>
 				
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-4 col-sm-6 entree">
                     <a href="#MiniWrapSlices" class="menu-box" data-toggle="modal">
                         <img src="../../coding-party/img/mini%20wrap%20slices.jpg" width="450px" class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption">
@@ -617,7 +648,7 @@
  <div id="main" class="container-fluid" >
    <div class="row no-gutter">       
 				
-                 <div class="col-md-4 col-sm-6">
+                 <div class="col-md-4 col-sm-6 main">
                     <a href="#JumboTigerPrawn" class="menu-box"data-toggle="modal">
                         <img src="../../coding-party/img/jumbo%20breaded%20tiger%20prawn.jpg" width="450px" class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption">
@@ -675,7 +706,7 @@
         </div>
     </div>
 
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-4 col-sm-6 main">
                     <a href="#ChickenKebab" class="menu-box"data-toggle="modal">
                         <img src="../../coding-party/img/kebabs.jpg" width="450px" class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption">
@@ -734,7 +765,7 @@
         </div>
     </div>
 
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-4 col-sm-6 main">
                     <a href="#LargeSushiPlate" class="menu-box" data-toggle="modal">
                         <img src="../../coding-party/img/Large%20sushi%20plates.jpg" width="450px" class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption" data-toggle="modal">
@@ -794,7 +825,7 @@
                 					<div class="clearfix"></div>
                 					<div class="clearfix"></div>
 
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-6 main">
                     <a href="#ChickenYakitori" class="menu-box" data-toggle="modal">
                         <img src="../../coding-party/img/chicken%20yakitori%20kebabs.jpg" width="450px" class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption" >
@@ -852,7 +883,7 @@
         </div>
     </div>
 
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-6 main">
                     <a href="#FilletofBeef" class="menu-box"data-toggle="modal">
                         <img src="../../coding-party/img/whole%20fillets%20of%20beef.jpg" width="450px" class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption" data-toggle="modal">
@@ -912,7 +943,7 @@
         </div>
     </div>
 
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-4 col-sm-6 main">
                     <a href="#CanadianLobsters" class="menu-box" data-toggle="modal">
                         <img src="../../coding-party/img/Dressed%20Canadian%20Lobsters.jpg" width="450px" class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption">
@@ -973,7 +1004,7 @@
                 					<div class="clearfix"></div>
                 					<div class="clearfix"></div>
                 
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-6 main">
                     <a href="#WingRibofBeef" class="menu-box" data-toggle="modal">
                         <img src="../../coding-party/img/Wing%20rib%20of%20beef.jpg" width="450px" class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption">
@@ -1032,7 +1063,7 @@
         </div>
     </div>
 				
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-4 col-sm-6 main">
                     <a href="#SalmonTerrine" class="menu-box" data-toggle="modal">
                         <img src="../../coding-party/img/salmon%20terrine.jpg" width="450px" class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption">
@@ -1092,7 +1123,7 @@
         </div>
     </div>
 
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-4 col-sm-6 main">
                     <a href="#PrawnDimsumSelection" class="menu-box" data-toggle="modal">
                         <img src="../../coding-party/img/prawn%20dimsum%20selections.jpg" width="450px" class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption">
@@ -1218,7 +1249,7 @@
  <div id="dessert" class="container-fluid">
    <div class="row no-gutter">       
 	                
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6 dessert">
                     <a href="#PetiteAssortments" class="menu-box" data-toggle="modal">
                         <img src="../../coding-party/img/petite%20assortments.jpg" width="450px" class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption">
@@ -1277,7 +1308,7 @@
         </div>
     </div>
 
-				<div class="col-lg-4 col-sm-6">
+				<div class="col-lg-4 col-sm-6 dessert">
                     <a href="#PetitePatisserie" class="menu-box" data-toggle="modal">
                         <img src="../../coding-party/img/petite%20patisserie.jpg" width="450px" class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption">
@@ -1334,7 +1365,7 @@
         </div>
     </div>
 
-			<div class="col-lg-4 col-sm-6">
+			<div class="col-lg-4 col-sm-6 dessert">
                     <a href="#MiniFruitTartlets" class="menu-box" data-toggle="modal">
                         <img src="../../coding-party/img/mini%20fresh%20fruit%20tartlets.jpg" width="450px" class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption">
@@ -1395,7 +1426,7 @@
                 					<div class="clearfix"></div>
                 					<div class="clearfix"></div>
 
-				<div class="col-lg-4 col-sm-6">
+				<div class="col-lg-4 col-sm-6 dessert">
                     <a href="#CheesecakeBites" class="menu-box" data-toggle="modal">
                         <img src="../../coding-party/img/cheesecake%20bite.jpg"width="450px" class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption">
@@ -1453,7 +1484,7 @@
         </div>
     </div>
                 
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6 dessert">
                     <a href="#FruityJellies" class="menu-box"data-toggle="modal">
                         <img src="../../coding-party/img/mini%20jellies.jpg" width="450px" class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption">
@@ -1510,7 +1541,7 @@
         </div>
     </div>
     
-				<div class="col-lg-4 col-sm-6">
+				<div class="col-lg-4 col-sm-6 dessert">
                     <a href="#Macaroon" class="menu-box" data-toggle="modal">
                         <img src="../../coding-party/img/mini%20macarons.jpg" width="450px" class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption">
@@ -1578,7 +1609,7 @@
   <div id="wine" class="container-fluid">
    <div class="row no-gutter">       
                
-				<div class="col-lg-4 col-sm-6">
+				<div class="col-lg-4 col-sm-6 wine">
                     <a href="#RedWine" class="menu-box" data-toggle="modal">
                         <img src="img/red wine.jpg"width="450px" class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption">
@@ -1637,7 +1668,7 @@
         </div>
     </div>
                 
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6 wine">
                     <a href="#WhiteWine" class="menu-box" data-toggle="modal">
                         <img src="img/white wine.jpg" width="450px" class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption">
@@ -1696,7 +1727,7 @@
         </div>
     </div>
 			
-				<div class="col-lg-4 col-sm-6">
+				<div class="col-lg-4 col-sm-6 wine">
                     <a href="#Champagne" class="menu-box" data-toggle="modal">
                         <img src="img/champagne.jpg" class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption">
@@ -1757,7 +1788,7 @@
                 					<div class="clearfix"></div>
                 					<div class="clearfix"></div>
 
-				<div class="col-lg-4 col-sm-6">
+				<div class="col-lg-4 col-sm-6 wine">
                     <a href="#SparklingRose" class="menu-box" data-toggle="modal">
                         <img src="img/Sparkling Rose.jpg" width="450px" class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption">
@@ -1815,7 +1846,7 @@
         </div>
     </div>
 			
-				<div class="col-lg-4 col-sm-6">
+				<div class="col-lg-4 col-sm-6 wine">
                     <a href="#CornishAle" class="menu-box" data-toggle="modal">
                         <img src="img/cornish ale.jpg" width="450px" class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption">
@@ -1873,7 +1904,7 @@
         </div>
     </div>
 
-				<div class="col-lg-4 col-sm-6">
+				<div class="col-lg-4 col-sm-6 wine">
                     <a href="#ClassicBeer" class="menu-box" data-toggle="modal">
                         <img src="img/classicBeer.jpg" width="450px" class="img-responsive img-centered" alt=""/>
                         <div class="menu-box-caption">
@@ -1928,7 +1959,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div></div>
     </div>
                 					<div class="clearfix"></div>
                 					<div class="clearfix"></div>
